@@ -7,7 +7,7 @@
 }
 body {
   @include background;
-  background-color: $primari-color;
+  background-color: $primary-color;
   color: #fff;
   height: 100vh;
   margin: 0;
@@ -27,7 +27,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2ram;
     padding: 0.2rem 1rem;
-    background: (lighten($primari-color, 2) 0.8);
+    background: (lighten($primary-color, 2) 0.8);
   }
 }
 
