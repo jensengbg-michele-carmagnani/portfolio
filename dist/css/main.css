@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 1s ease-out; }
+  .menu-btn .btn-line {
+    width: 35px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 1s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      background-color: paleturquoise; }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+      background-color: paleturquoise; }
+
 * {
   box-sizing: border-box; }
 
