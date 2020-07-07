@@ -136,6 +136,39 @@
   .nav-link:hover {
     color: #eece1e; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main h1.lg-heading {
+      font-size: 3rem; }
+    main.lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  article.menu-nav,
+  article.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    article.menu-nav.show,
+    article.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+    width: 100%; }
+    .menu-branding .portrait {
+      width: 100px;
+      height: 100px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
 * {
   box-sizing: border-box; }
 

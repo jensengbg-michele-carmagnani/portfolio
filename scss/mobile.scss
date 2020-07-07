@@ -1,0 +1,51 @@
+//Widesceen
+@include mediaXl {
+}
+//descsktops & laptops
+@include mediaLg {
+}
+//Tablet
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    h1.lg-heading {
+      font-size: 3rem;
+    }
+    &.lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+  article.menu-nav,
+  article.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+    width: 100%;
+    .portrait {
+      // background: url();
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+//Smartphone
+@include mediaSm {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+}
