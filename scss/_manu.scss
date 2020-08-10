@@ -13,7 +13,7 @@
     width: 35px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     border-radius: 25%;
     @include easeOut;
   }
@@ -67,7 +67,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($color: rgb(56, 58, 58), $amount: 3);
+    background: darken($primary-color, $amount: 3);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -80,7 +80,7 @@
 
   // Branding side
   &-branding {
-    background: #444;
+    background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -96,7 +96,7 @@
       background-position: center;
       background-size: cover;
       border: solid 3px $secondary-color;
-      border-radius: 35%;
+      border-radius: 50%;
     }
   }
   .nav-item{
@@ -126,7 +126,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
     &:hover{
