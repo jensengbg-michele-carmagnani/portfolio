@@ -2,7 +2,6 @@
 @import "config";
 @import "manu";
 
-
 * {
   box-sizing: border-box;
 }
@@ -83,7 +82,7 @@ main {
     border-radius: 50%;
     border: $secondary-color 3px solid;
   }
-  
+
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
@@ -97,14 +96,14 @@ main {
   .job3 {
     grid-area: job3;
   }
-  .job{
+  .job {
     background: lighten($color: $primary-color, $amount: 5);
     border-bottom: $secondary-color 5px solid;
     padding: 0.5rem;
   }
 }
 
-#main-footer{
+#main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($color: $primary-color, $amount: 4);
@@ -113,4 +112,3 @@ main {
 }
 
 @import "mobile";
-
