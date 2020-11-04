@@ -102,6 +102,45 @@ main {
     padding: 0.5rem;
   }
 }
+//work-projects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.7rem;
+
+  img {
+    width: 100%;
+    height: 90%;
+    border: 5px #fff solid;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+// Button style
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, $amount: 50);
+  color: #fff;
+}
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, $amount: 50);
+  color: #333;
+}
 
 #main-footer {
   text-align: center;
