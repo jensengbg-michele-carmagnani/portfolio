@@ -38,7 +38,6 @@
         background-color: $secondary-color;
       }
     }
-    
   }
 }
 
@@ -89,37 +88,36 @@
       transform: translate3d(0, 0, 0);
     }
 
-    .portrait{
+    .portrait {
       width: 250px;
       height: 250px;
-      background: url('/dist/img/portrait.jpeg');
+      background: url("/dist/img/portrait.jpeg");
       background-position: center;
       background-size: cover;
       border: solid 3px $secondary-color;
       border-radius: 50%;
     }
   }
-  .nav-item{
-    transform: translate3d(600px, 0 , 0);
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
     @include easeOut;
     &.show {
       // Slide in from the right
       transform: translate3d(0, 0, 0);
     }
-    &.current > a{
-      color: $secondary-color
+    &.current > a {
+      color: $secondary-color;
     }
-    
   }
 }
 
 // Delay each nav item slide by 0.2s
 @for $x from 1 through 4 {
-  .nav-item:nth-child(#{$x}){
+  .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.2s;
   }
 
-  .nav-link{
+  .nav-link {
     display: inline-block;
     position: relative;
     font-size: 30px;
@@ -129,7 +127,7 @@
     color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
-    &:hover{
+    &:hover {
       color: $secondary-color;
     }
   }
