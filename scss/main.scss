@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
 @import "config";
 @import "manu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -32,6 +33,11 @@ h3 {
     border-radius: 2%;
   }
 }
+h5,
+h6 {
+  font-weight: 500;
+  color: set-text-color($thirdly-color);
+}
 
 a {
   color: #fff;
@@ -49,8 +55,8 @@ header {
 
 main {
   padding: 4rem;
-  // height: 100%;
-  min-height: calc(100vh- 60px);
+  // min-height: calc(100vh - 60px);
+
   .icon {
     margin-top: 1rem;
     a {
@@ -107,10 +113,9 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.7rem;
-
   img {
-    width: 100%;
-    height: 90%;
+    max-width: 50%;
+    max-height: 50%;
     border: 5px #fff solid;
     &:hover {
       opacity: 0.5;
@@ -126,19 +131,16 @@ main {
   justify-content: space-evenly;
   align-content: center;
   margin-top: 1rem;
-  .text-container {
+  section {
+    text-align: center;
     font-size: 2rem;
-    border: 3px #fff solid;
+    border: 2px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
     &:hover {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
-      color: set-text-color($secondary-color);
-      .text-secondary {
-        color: set-text-color($secondary-color);
-      }
     }
   }
 }
@@ -166,11 +168,12 @@ main {
 }
 
 #main-footer {
-  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   padding: 1rem;
+  text-align: center;
   background: darken($color: $primary-color, $amount: 4);
   color: set-text-color($primary-color);
-  height: 60px;
 }
-
-@import "mobile";
